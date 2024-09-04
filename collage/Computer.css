@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#computer-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#computer-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+}
+
+.cse-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cse-logo {
+    flex: 1;
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cse-content {
+    flex: 2;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.cse-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.cse-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.cse-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+.cse-content ul li {
+    margin-bottom: 10px;
+}
+
+.staff-image-container {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.staff-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+#computer-section h1 {
+    font-size: 4em; /* Large heading */
+    margin: 0; /* Remove default margin */
+}
+#computer-section {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    padding: 50px; /* Padding around the content */
+    text-align: center; /* Center th */
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOYOLA POLYTECHNIC COLLEGE (YSSR) PULIVENDLA - 516390</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Function to open the modal
+        function openModal() {
+            document.getElementById("alertModal").style.display = "block";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            document.getElementById("alertModal").style.display = "none";
+        }
+
+        // Check if the modal has already been shown
+        function checkModal() {
+            if (!localStorage.getItem("alertShown")) {
+                openModal();
+                localStorage.setItem("alertShown", "true");
+            }
+        }
+
+        // Open the modal only on the first visit
+        window.onload = function() {
+            checkModal();
+        };
+    </script>
+</head>
+<body>
+    <div align="left" style="background-color:#0e044a;">
+        <center style="margin:15px; color:#e8933f">
+            <h1>LOYOLA POLYTECHNIC COLLEGE (YSSR) PULIVENDLA - 516390</h1>
+        </center>
+        <span class="img1">
+            <img src="img2.jpg" alt="College Logo">
+        </span>
+        <nav class="nav-1">
+            <div class="dropdown">
+                <a href="About.html" style="color: #570fdb;">About</a>
+                <div class="dropdown-content">
+                    <a href="History.html">History</a>
+                    <a href="Management.html">Management</a>
+                </div>
+            </div>
+            &emsp;&emsp;&emsp;&emsp;
+            <div class="dropdown">
+                <a href="Department.html" style="color:#261bbd;">Department</a>
+                <div class="dropdown-content">
+                    <a href="Computer.html">CSE</a>
+                    <a href="EEE.html">EEE</a>
+                    <a href="ECE.html">ECE</a>
+                    <a href="Civil.html">Civil</a>
+                    <a href="Mech.html">Mech</a>
+                    <a href="Min.html">Min</a>
+                </div>
+            </div>
+            &emsp;&emsp;&emsp;&emsp;
+            <a href="Contact.html" style="color:#4b19d4;">Contact</a>
+        </nav>
+    </div>
+
+    <img src="img1.jpg" height="600" width="2000" alt="College Image">
+
+    <!-- Modal for Alert/Prompt -->
+    <div id="alertModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Important Announcement</h2>
+            <p>Welcome to Loyola Polytechnic College! Please check our latest updates on admissions and events.</p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+</body>
+</html>
